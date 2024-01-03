@@ -21,4 +21,8 @@ public class AnimalList implements Iterable<Animal> {
     public Iterator iterator() {
         return new AnimalIterator(animalList);
     }
+
+    public void delAnimal(Animal animal) {
+        animalList.remove(animal);
+    }
 }

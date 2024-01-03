@@ -61,4 +61,10 @@ public class Service {
         }
         return stb.toString();
     }
+
+    public void delAnimal(int id) {
+        Animal animal=findFromId(id);
+        animalList.delAnimal(animal);
+
+    }
 }

@@ -49,6 +49,11 @@ public class ConsoleUI implements View{
     }
 
     public void deleteAnimal() {
+        System.out.println("Введите ID животного");
+        String idAnimal=scanner.nextLine();
+        int idAnimalInt=Integer.parseInt(idAnimal);
+        presenter.deleteAnimal(idAnimalInt);
+
     }
 
     public void addSkill() {

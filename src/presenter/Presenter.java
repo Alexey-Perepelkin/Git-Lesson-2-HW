@@ -31,4 +31,9 @@ public class Presenter {
     public void addSkill(int id,String str) {
         service.addSkill(id ,str);
     }
+
+    public void deleteAnimal(int id) {
+        service.delAnimal(id);
+
+    }
 }

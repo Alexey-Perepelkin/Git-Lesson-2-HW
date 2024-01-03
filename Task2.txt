@@ -1,0 +1,700 @@
+ap@ap-VirtualBox:~/Control_task/task2$ sudo nano /etc/apt/sources.list
+
+[sudo] password for ap: 
+
+ap@ap-VirtualBox:~/Control_task/task2$ apt-add-repositori https://dev.mysql.com/downloads/repo/apt
+
+Command 'apt-add-repositori' not found, did you mean:
+
+  command 'apt-add-repository' from deb software-properties-common (0.99.22.7)
+
+Try: sudo apt install <deb name>
+
+ap@ap-VirtualBox:~/Control_task/task2$ apt-add-repositori https://dev.mysql.com/downloads/repo/apt/
+
+Command 'apt-add-repositori' not found, did you mean:
+
+  command 'apt-add-repository' from deb software-properties-common (0.99.22.7)
+
+Try: sudo apt install <deb name>
+
+ap@ap-VirtualBox:~/Control_task/task2$ apt-add-repository https://dev.mysql.com/downloads/repo/apt/
+
+Error: must run as root
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt-add-repository https://dev.mysql.com/downloads/repo/apt/
+
+[sudo] password for ap: 
+
+Repository: 'deb https://dev.mysql.com/downloads/repo/apt/ jammy main'
+
+Description:
+
+Archive for codename: jammy components: main
+
+More info: https://dev.mysql.com/downloads/repo/apt/
+
+Adding repository.
+
+Press [ENTER] to continue or Ctrl-c to cancel.
+
+Adding deb entry to /etc/apt/sources.list.d/archive_uri-https_dev_mysql_com_downloads_repo_apt_-jammy.list
+
+Adding disabled deb-src entry to /etc/apt/sources.list.d/archive_uri-https_dev_mysql_com_downloads_repo_apt_-jammy.list
+
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease             
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]                                                    
+
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]                                                                                            
+
+Ign:5 https://dev.mysql.com/downloads/repo/apt jammy InRelease                                                                                                       
+
+Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 263 kB]       
+
+Err:6 https://dev.mysql.com/downloads/repo/apt jammy Release                                     
+
+  404  Not Found [IP: 184.51.238.43 443]
+
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 051 kB]          
+
+Get:9 https://download.docker.com/linux/ubuntu jammy InRelease [48,8 kB]                                                                                             
+
+Get:10 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [23,0 kB]                                                                                
+
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [383 kB]                                                                                  
+
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [200 kB]                                                                                 
+
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1 226 kB]                                                                         
+
+Get:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [547 kB]                                                                                 
+
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [200 kB]                                                                           
+
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [823 kB]                                                                             
+
+Get:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [260 kB]                                                                                
+
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [580 kB]                                                                              
+
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [156 kB]                                                                             
+
+Get:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1 250 kB]                                                                        
+
+Get:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [32,8 kB]                                                                          
+
+Get:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [203 kB]                                                                          
+
+Get:23 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [675 kB]                                                                             
+
+Get:24 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 020 kB]                                                                          
+
+Get:25 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [226 kB]                                                                            
+
+Get:26 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [33,9 kB]                                                                              
+
+Get:27 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41,7 kB]                                                                             
+
+Get:28 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [13,4 kB]                                                                          
+
+Get:29 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24,3 kB]                                                                         
+
+Reading package lists... Done                                                                                                                                        
+
+E: The repository 'https://dev.mysql.com/downloads/repo/apt jammy Release' does not have a Release file.
+
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt update
+
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                                                    
+
+Hit:3 http://security.ubuntu.com/ubuntu jammy-security InRelease                                                                                         
+
+Hit:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                                                                                      
+
+Hit:5 https://download.docker.com/linux/ubuntu jammy InRelease                                        
+
+Ign:6 https://dev.mysql.com/downloads/repo/apt jammy InRelease                  
+
+Err:7 https://dev.mysql.com/downloads/repo/apt jammy Release
+
+  404  Not Found [IP: 184.51.238.43 443]
+
+Reading package lists... Done
+
+E: The repository 'https://dev.mysql.com/downloads/repo/apt jammy Release' does not have a Release file.
+
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt download mysql-apt-config_0.8.29-1_all.deb
+
+E: Unable to locate package mysql-apt-config_0.8.29-1_all.deb
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt update
+
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease                                                 
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                
+
+Hit:3 http://security.ubuntu.com/ubuntu jammy-security InRelease                        
+
+Hit:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                     
+
+Hit:6 https://download.docker.com/linux/ubuntu jammy InRelease          
+
+Ign:5 https://dev.mysql.com/downloads/repo/apt jammy InRelease
+
+Err:7 https://dev.mysql.com/downloads/repo/apt jammy Release
+
+  404  Not Found [IP: 23.52.29.249 443]
+
+Reading package lists... Done
+
+E: The repository 'https://dev.mysql.com/downloads/repo/apt jammy Release' does not have a Release file.
+
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt install mysql-apt-config_0.8.29-1_all.deb
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+E: Unable to locate package mysql-apt-config_0.8.29-1_all.deb
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo wget https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+
+--2023-12-28 00:42:49--  https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+
+Resolving dev.mysql.com (dev.mysql.com)... 23.52.29.249, 2a02:2d8:0:799e::2e31, 2a02:2d8:0:7987::2e31
+
+Connecting to dev.mysql.com (dev.mysql.com)|23.52.29.249|:443... connected.
+
+HTTP request sent, awaiting response... 404 Not Found
+
+2023-12-28 00:42:51 ERROR 404: Not Found.
+
+
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo wget https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+
+--2023-12-28 00:44:08--  https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+
+Resolving dev.mysql.com (dev.mysql.com)... 23.52.29.249, 2a02:2d8:0:7987::2e31, 2a02:2d8:0:799e::2e31
+
+Connecting to dev.mysql.com (dev.mysql.com)|23.52.29.249|:443... connected.
+
+HTTP request sent, awaiting response... 404 Not Found
+
+2023-12-28 00:44:09 ERROR 404: Not Found.
+
+
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+
+--2023-12-28 00:49:24--  https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+
+Resolving dev.mysql.com (dev.mysql.com)... 23.52.29.249, 2a02:2d8:0:799e::2e31, 2a02:2d8:0:7987::2e31
+
+Connecting to dev.mysql.com (dev.mysql.com)|23.52.29.249|:443... connected.
+
+HTTP request sent, awaiting response... 302 Moved Temporarily
+
+Location: https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb [following]
+
+--2023-12-28 00:49:26--  https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb
+
+Resolving repo.mysql.com (repo.mysql.com)... 23.210.173.94, 2a02:26f0:d200:889::1d68, 2a02:26f0:d200:888::1d68
+
+Connecting to repo.mysql.com (repo.mysql.com)|23.210.173.94|:443... connected.
+
+HTTP request sent, awaiting response... 200 OK
+
+Length: 18172 (18K) [application/x-debian-package]
+
+Saving to: ‘mysql-apt-config_0.8.29-1_all.deb’
+
+
+
+mysql-apt-config_0.8.29-1_all.deb         100%[===================================================================================>]  17,75K  --.-KB/s    in 0,001s  
+
+
+
+2023-12-28 00:49:27 (19,1 MB/s) - ‘mysql-apt-config_0.8.29-1_all.deb’ saved [18172/18172]
+
+
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+Selecting previously unselected package mysql-apt-config.
+
+(Reading database ... 183159 files and directories currently installed.)
+
+Preparing to unpack mysql-apt-config_0.8.29-1_all.deb ...
+
+Unpacking mysql-apt-config (0.8.29-1) ...
+
+Setting up mysql-apt-config (0.8.29-1) ...
+
+
+
+
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt update
+
+Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease                         
+
+Hit:2 http://ru.archive.ubuntu.com/ubuntu jammy InRelease                                                 
+
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                                
+
+Hit:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                                  
+
+Hit:5 https://download.docker.com/linux/ubuntu jammy InRelease                                 
+
+Ign:6 https://dev.mysql.com/downloads/repo/apt jammy InRelease                                 
+
+Err:7 https://dev.mysql.com/downloads/repo/apt jammy Release
+
+  404  Not Found [IP: 184.51.238.43 443]
+
+Get:8 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,2 kB]
+
+Get:9 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]
+
+Get:10 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config amd64 Packages [566 B]
+
+Get:11 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config i386 Packages [566 B]
+
+Get:12 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,6 kB]
+
+Get:13 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [7 994 B]
+
+Get:14 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]
+
+Reading package lists... Done      
+
+E: The repository 'https://dev.mysql.com/downloads/repo/apt jammy Release' does not have a Release file.
+
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt-get update
+
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                     
+
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]                                 
+
+Hit:4 https://download.docker.com/linux/ubuntu jammy InRelease                                                       
+
+Hit:5 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                       
+
+Hit:6 http://repo.mysql.com/apt/ubuntu jammy InRelease           
+
+Ign:7 https://dev.mysql.com/downloads/repo/apt jammy InRelease 
+
+Err:8 https://dev.mysql.com/downloads/repo/apt jammy Release
+
+  404  Not Found [IP: 23.52.29.249 443]
+
+Reading package lists... Done
+
+E: The repository 'https://dev.mysql.com/downloads/repo/apt jammy Release' does not have a Release file.
+
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo dpkg --purge mysql-apt-config_0.8.29-1_all.deb
+
+dpkg: error: you must specify packages by their own names, not by quoting the names of the files they come in
+
+
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+
+Use 'apt' or 'aptitude' for user-friendly package management;
+
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+
+Type dpkg --force-help for a list of forcing options;
+
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt install mysql-server
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following additional packages will be installed:
+
+  libaio1 libmecab2 mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-client mysql-common mysql-community-client mysql-community-client-core
+
+  mysql-community-client-plugins mysql-community-server mysql-community-server-core
+
+The following NEW packages will be installed:
+
+  libaio1 libmecab2 mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-client mysql-common mysql-community-client mysql-community-client-core
+
+  mysql-community-client-plugins mysql-community-server mysql-community-server-core mysql-server
+
+0 upgraded, 13 newly installed, 0 to remove and 97 not upgraded.
+
+Need to get 37,8 MB of archives.
+
+After this operation, 273 MB of additional disk space will be used.
+
+Do you want to continue? [Y/n] y
+
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libaio1 amd64 0.3.112-13build1 [7 176 B]
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libmecab2 amd64 0.996-14build9 [199 kB]
+
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-utils amd64 0.996-14build9 [4 850 B]
+
+Get:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6 718 kB]
+
+Get:5 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-common amd64 8.0.35-1ubuntu22.04 [67,9 kB]
+
+Get:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-plugins amd64 8.0.35-1ubuntu22.04 [1 443 kB]
+
+Get:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-core amd64 8.0.35-1ubuntu22.04 [2 120 kB]                                        
+
+Get:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client amd64 8.0.35-1ubuntu22.04 [2 195 kB]                                             
+
+Get:9 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-client amd64 8.0.35-1ubuntu22.04 [66,6 kB]                                                        
+
+Get:10 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server-core amd64 8.0.35-1ubuntu22.04 [24,8 MB]                                        
+
+Get:11 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4 384 B]                                                    
+
+Get:12 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server amd64 8.0.35-1ubuntu22.04 [78,3 kB]                                             
+
+Get:13 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-server amd64 8.0.35-1ubuntu22.04 [66,6 kB]                                                       
+
+Fetched 37,8 MB in 3min 29s (181 kB/s)                                                                                                                               
+
+Preconfiguring packages ...
+
+Selecting previously unselected package mysql-common.
+
+(Reading database ... 183164 files and directories currently installed.)
+
+Preparing to unpack .../00-mysql-common_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-common (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-community-client-plugins.
+
+Preparing to unpack .../01-mysql-community-client-plugins_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-client-plugins (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-community-client-core.
+
+Preparing to unpack .../02-mysql-community-client-core_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-client-core (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-community-client.
+
+Preparing to unpack .../03-mysql-community-client_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-client (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-client.
+
+Preparing to unpack .../04-mysql-client_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-client (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package libaio1:amd64.
+
+Preparing to unpack .../05-libaio1_0.3.112-13build1_amd64.deb ...
+
+Unpacking libaio1:amd64 (0.3.112-13build1) ...
+
+Selecting previously unselected package libmecab2:amd64.
+
+Preparing to unpack .../06-libmecab2_0.996-14build9_amd64.deb ...
+
+Unpacking libmecab2:amd64 (0.996-14build9) ...
+
+Selecting previously unselected package mysql-community-server-core.
+
+Preparing to unpack .../07-mysql-community-server-core_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-server-core (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-community-server.
+
+Preparing to unpack .../08-mysql-community-server_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-server (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mecab-utils.
+
+Preparing to unpack .../09-mecab-utils_0.996-14build9_amd64.deb ...
+
+Unpacking mecab-utils (0.996-14build9) ...
+
+Selecting previously unselected package mecab-ipadic.
+
+Preparing to unpack .../10-mecab-ipadic_2.7.0-20070801+main-3_all.deb ...
+
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+
+Selecting previously unselected package mecab-ipadic-utf8.
+
+Preparing to unpack .../11-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb ...
+
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+
+Selecting previously unselected package mysql-server.
+
+Preparing to unpack .../12-mysql-server_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-server (8.0.35-1ubuntu22.04) ...
+
+Setting up libmecab2:amd64 (0.996-14build9) ...
+
+Setting up mysql-common (8.0.35-1ubuntu22.04) ...
+
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+
+Setting up mecab-utils (0.996-14build9) ...
+
+Setting up mysql-community-client-plugins (8.0.35-1ubuntu22.04) ...
+
+Setting up libaio1:amd64 (0.3.112-13build1) ...
+
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: using /var/lib/mecab/dic/ipadic to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+
+Setting up mysql-community-client-core (8.0.35-1ubuntu22.04) ...
+
+Setting up mysql-community-server-core (8.0.35-1ubuntu22.04) ...
+
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+
+Setting up mysql-community-client (8.0.35-1ubuntu22.04) ...
+
+Setting up mysql-client (8.0.35-1ubuntu22.04) ...
+
+Setting up mysql-community-server (8.0.35-1ubuntu22.04) ...
+
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+
+Setting up mysql-server (8.0.35-1ubuntu22.04) ...
+
+Processing triggers for man-db (2.10.2-1) ...
+
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+
+ap@ap-VirtualBox:~/Control_task/task2$ sudo apt purge mysql-server
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following packages were automatically installed and are no longer required:
+
+  libaio1 libmecab2 mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-client mysql-common mysql-community-client mysql-community-client-core
+
+  mysql-community-client-plugins mysql-community-server mysql-community-server-core
+
+Use 'sudo apt autoremove' to remove them.
+
+The following packages will be REMOVED:
+
+  mysql-server*
+
+0 upgraded, 0 newly installed, 1 to remove and 97 not upgraded.
+
+After this operation, 77,8 kB disk space will be freed.
+
+Do you want to continue? [Y/n] y
+
+(Reading database ... 183524 files and directories currently installed.)
+
+Removing mysql-server (8.0.35-1ubuntu22.04) ...
+
+ap@ap-VirtualBox:~/Control_task/task2$  mysql-server --help
+
+mysql-server: command not found
+
+ap@ap-VirtualBox:~/Control_task/task2$ 
+
